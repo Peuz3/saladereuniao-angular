@@ -1,27 +1,35 @@
 # ClientRoom
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
+Angular CLI: 12.2.1
+Node: 14.17.5
+Package Manager: npm 6.14.14
 
-## Development server
+## Criando Um Projeto
+ng new cliente-room
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Would you like to add Angular routing? No
 
-## Code scaffolding
+Which stylesheet format would you like to use? CSS
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Criando serviços de room
+ng g s room
 
-## Build
+## Gerando componentes da aplicação:
+ng g c create-room
+ng g c room-details
+ng g c room-list
+ng g c update-room
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalação do Bootstrap(Estilização) e Jquery(Manipulação de botões)
+npm install bootstrap jquery --save
 
-## Running unit tests
+## No arquivo angular.json acrescentar
+    styles: "node_modules/bootstrap/dist/css/bootstrap.min.css"
+    scripts: 
+	    "node_modules/jquery/dist/jquery.min.js",
+        "node_modules/bootstrap/dist/js/bootstrap.min.js"
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Url de navegação: http://localhost:4200/rooms
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
